@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <meta name="description" content="Pagina web dedicada a los cubs">
+    <meta name="author" content="Julio Carpio - 1041814">
+    <meta name="keywords" content= "Cubs, Baseball, Fanpage, World Series, Chicago">
+    <link rel="icon" href="./images/mbl_chicago_cubs.ico">
 
     <title>Página web para Programación Web</title>
     <!-- Bootstrap core CSS -->
@@ -60,17 +62,29 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center" style="background-color:lavender; background-image: url(./images/celebration.jpg);  background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; box-shadow: grey; opacity: 0.9;">
-            <div class="container">
-             <h1 class="jumbotron-heading" style="color:white;" >Los cachorros, campeones del béisbol 2016</h1>
-             <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+      <div id="fondo" class="jumbotron text-center" style="background-color:lavender; background-image: url(./images/world-series-wallpaper2.jpg);  background-attachment: fixed; background-position:center top; background-repeat: no-repeat; background-size: cover; position: relative; box-shadow: grey; opacity: 0.9;" data-stellar-background-ratio="0.5">
+        <div class="overlay">  
+        <div class="container">
+             <h1 id="prueba" class="jumbotron-heading" style="color:white; text-shadow: 2px 2px 4px #000000;" > <strong>Los cachorros, campeones del béisbol 2016</strong></h1>
+             <p class="lead" style="border-color: royalblue; color:lavenderblush; text-shadow: 4px 4px 4px #000000;"> <strong>
+                "The Cubs, Win the world series... It's over, and the cubs, have finally won it all!"
+             </strong> </p>
              <p>
-               <a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="btn btn-primary my-2">Main call to action</a>
-               <a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="btn btn-secondary my-2">Secondary action</a>
-             </p> 
+             <p class="lead" style="border-color: royalblue; color: lavenderblush; text-shadow: 4px 4px 4px #000000;"> <strong>
+                    Joe Buck, FOX sportscaster
+                 </strong> </p>
+             
+               <button class="btn btn-primary my-2"style="margin:5px" onclick="cambiarFont('red')">Cambiar tipo</button>
+               <button class="btn btn-secondary my-2" onclick="cambiarWallpaper()">Cambiar fondo</button>
+                 
+               <button class="btn btn-primary my-2"style="margin:5px" onclick="regresarFont('red')">Regresar tipo</button>
+               <button class="btn btn-secondary my-2" onclick="regresarWallpaper()">Regresar fondo</button>
             </div>
+                  
+
+          </div>  
         </div>
-      </section>
+      </div>
 
       <div class="album py-5 bg-light">
         <div class="container">
@@ -83,8 +97,8 @@
                   <p class="card-text">Los jugadores abrazando a Mike Montgomery, quien se apuntó el salvamento en el juego decisivo de la serie mundial del 2016</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <small class="text-muted">2 de Noviembre 2016</small>
                   </div>
@@ -98,8 +112,8 @@
                   <p class="card-text">Celebración del equipo luego de obtener el último out de la serie mundial y así finalizar una sequía de 108 años de no ganar una serie mundial de béisbol.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <small class="text-muted">2 de Noviembre 2016</small>
                   </div>
@@ -113,15 +127,14 @@
                   <p class="card-text">Vista completa del estadio Progressive Field, hogar de los Indios de Cleveland, equipo de la división central de la liga americana y rival de los cachorros en la serie mundial del 2016.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <small class="text-muted">1 de Noviembre 2016</small>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" alt="Thumbnail [100%x225]" src="./images/kirs_bryant.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
@@ -129,8 +142,8 @@
                   <p class="card-text">Kris Bryant, tercera base de los cachorros y jugador más valioso durante la temporada regular del 2016, conectando de cuadrangular durante el juego 6 de la serie mundial.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <small class="text-muted">1 de Noviembre 2016</small>
                   </div>
@@ -144,8 +157,8 @@
                   <p class="card-text">David Ross, segundo receptor de los Cachorros, se retira de la gran carpa por la puerta grande: Como campeón de la serie mundial.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <small class="text-muted">2 de Noviembre 2016</small>
                   </div>
@@ -159,15 +172,14 @@
                   <p class="card-text">Javier Báez, segunda base de los cachorros, sacando de out a Francisco Lindor, de los Indios de Cleveland, en un intenro de robo de base durante el juego 1 de la serie mundial del 2016.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <small class="text-muted">25 de octubre 2016</small>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" alt="Thumbnail [100%x225]" src="./images/wrigley_field.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
@@ -175,8 +187,8 @@
                   <p class="card-text">El estadio Wrigley Field, hogar de los cachorros de Chicago. No se jugaba un partido de serie mundial en este estadio desde el año 1945, año en que los cachorros perdieron la serie mundial contra los Tigres de Detroit.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <small class="text-muted">28 de Octubre 2016</small>
                   </div>
@@ -190,8 +202,8 @@
                   <p class="card-text">Joe Maddon (Manager) y Ben Zobrist (MVP de la serie mundial), celebrando la obtención del título que los acredita como campeones de la máxima categoría del beisbol a nivel profesional.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <small class="text-muted">2 de noviembre de 2016</small>
                   </div>
@@ -205,8 +217,8 @@
                   <p class="card-text">Marquee del estadio Wrigley Field. Nunca antes se habían leído las palabras "World Series Champions" en el marquee, pues éste fue colocado tiempo después de que los Cachorros se coronaran campeones por última vez, en 1908.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <small class="text-muted">30 de Octubre de 2016</small>
                   </div>
@@ -222,19 +234,21 @@
     <footer class="text-muted">
       <div class="container">
         <p class="float-right">
-          <a href="https://getbootstrap.com/docs/4.0/examples/album/#">Back to top</a>
+          <a href="">Back to top</a>
         </p>
-        <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="https://getbootstrap.com/docs/4.0/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/4.0/getting-started/">getting started guide</a>.</p>
+        <p>Todas las imágenes utilizadas son propiedad de Los Cachorros de Chicago ©.</p>
       </div>
     </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Album example for Bootstrap_files/jquery-3.2.1.slim.min.js.descarga" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="./Album example for Bootstrap_files/jquery-3.2.1.slim.min.js.descarga" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="./jquery-3.3.1.min.js" ></script>
     <script src="./Album example for Bootstrap_files/popper.min.js.descarga"></script>
     <script src="./Album example for Bootstrap_files/bootstrap.min.js.descarga"></script>
     <script src="./Album example for Bootstrap_files/holder.min.js.descarga"></script>
+    <script src="./jquery.stellar.min.js"></script>
+    <script src="./js/personalizados.js"></script>
+
 <svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
